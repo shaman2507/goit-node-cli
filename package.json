@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "commander": "^11.1.0",
+    "cors": "^2.8.5"
+  },
+  "name": "goit-node-cli",
+  "description": "Homework 1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Yaroslavskyi",
+  "license": "ISC",
+  "private": "true",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
