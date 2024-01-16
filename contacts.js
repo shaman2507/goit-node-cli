@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { promises: fsPromises } = require('fs');
 const path = require('path');
 
 const contactsPath = path.join(__dirname, 'contacts.json');
