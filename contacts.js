@@ -2,12 +2,14 @@ const fs = require('fs');
 const { promises: fsPromises } = require('fs');
 const path = require('path');
 
-const contactsPath = path.join(__dirname, 'contacts.json');
+const contactsPath = path.join(__dirname, './db/contacts.json');
 
 async function listContacts() {
   try {
-    const data = await fsPromises.readFile(contactsPath, 'utf-8');
-    return JSON.parse(data);
+    const data = await fsPromises.readFile(contactsPath, { encoding: 'utf-8' });
+    const contacts = JSON.parse(data);
+    console.log(JSON.stringify(contacts, null, 2));
+    return contacts;
   } catch (error) {
     return [];
   }
